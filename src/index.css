@@ -2,41 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Healthy Eating App Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors */
+    --background: 150 30% 98%;
+    --foreground: 160 20% 15%;
 
+    /* Card and surface colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 160 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 160 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary colors - Fresh Green */
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 160 60% 85%;
+    --primary-glow: 160 84% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary colors - Calming Blue */
+    --secondary: 210 75% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 210 50% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent colors - Warm Orange */
+    --accent: 25 95% 65%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 25 90% 90%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted colors */
+    --muted: 150 15% 95%;
+    --muted-foreground: 160 10% 50%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 160 84% 45%;
+    --warning: 45 93% 58%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* UI elements */
+    --border: 150 20% 88%;
+    --input: 150 25% 96%;
+    --ring: 160 84% 39%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(160 84% 39%), hsl(210 75% 60%));
+    --gradient-warm: linear-gradient(135deg, hsl(25 95% 65%), hsl(15 90% 70%));
+    --gradient-soft: linear-gradient(180deg, hsl(150 30% 98%), hsl(150 25% 94%));
+    --gradient-hero: linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(210 75% 60%) 50%, hsl(25 95% 65%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 2px 20px -5px hsl(160 84% 39% / 0.1);
+    --shadow-primary: 0 8px 25px -8px hsl(160 84% 39% / 0.3);
+    --shadow-glow: 0 0 30px hsl(160 84% 55% / 0.2);
+
+    /* Radius */
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
